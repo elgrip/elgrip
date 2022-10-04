@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+
+    <div class="inner-container">
+        <div class="top-area">
+            <div class="image">
+                <img class="brand-image" src="Three Leaf Clover.svg">
+            </div>
+            <div class="title">
+                <span class="electrogrip">Electrogrip</span><br/>
+                <span class="sub-title">Cross platform HMI</span>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <p class="login">Login</p>
+            <form>
+                <label for="username">Username</label>
+                <input type="username" id="username" class="form-input" required>
+                <div class="spacer"></div>
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-input" required>
+                <input type="submit" value="Login" class="form-input btn">
+            </form>
+        </div>
+    </div>
+    <!-- <span style="margin: 0; color: #A8A8A8;">designed by <b>Odii Daniel</b></span> -->
+
+    </div>
+</body>
+<style>
+    @font-face{
+        font-family: poppins;
+        src: url('src/Poppins-Medium.ttf');
+    }
+
+
+    html,body{
+        padding: 0;
+        margin: 0;
+        font-family: poppins;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+       height: 100vh;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+    }
+    .inner-container{
+        display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       width: 50vw;
+    }
+    .top-area{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+    .electrogrip{font-size: 45px; font-weight: bolder;}
+    .sub-title{font-size: 25px; font-weight: 100;}
+    .login{font-size: 30px; margin: 0; border-bottom: 2px solid #A8A8A8; padding: 10px;}
+    .btn{margin-top: 20px; background: #890FDD !important;  color: #ffffff;}
+    .btn:hover{
+        background: #000 !important;
+        transition-duration: 1s;
+    }
+
+    .brand-image{
+        height: 100px;
+        width: 100px;
+    }
+    .form-field{
+        border: 1px solid #A8A8A8;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .spacer{
+        height: 30px;
+    }
+    .form-input{
+        border: none;
+        font-size: 25px;
+        background: #E7E7E7;
+        padding: 15px;
+        /* height: 25px;
+        width: 100px; */
+    }
+</style>
+</html>
