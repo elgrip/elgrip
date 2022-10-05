@@ -71,15 +71,15 @@
         <div class="strange-container">
                 <div class="subpanes" style="width: 70%;">
                     <div class="subwindow-title">Error Correction on Received Data</div>
-                    <div class="subwindow-content">
+                    <div class="subwindow-content" style="width: 100%; justify-content: flex-start; padding: 15px; margin: 0;">
                         <div class="section">
-                            <div class="group">
+                            <div class="group" style="align-items: flex-start; width: 100% !important; padding: 10px;">
                                 <p>ASCII returned data display</p>
-                                <input type="textarea" >
+                                <input type="textarea" class="big-input">
                             </div>
                             <div class="group">
                                 <p>RTU returned data display</p>
-                                <input class="subwindow-input" type="text">
+                                <input class="subwindow-input" type="text" style="width: 300px; padding: 10px;">
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
 <script src="script.js"></script>
 <script>
     interactive('sub-window', { resize: false });
-    interactive('sub-window2', { resize: false });
+    // interactive('sub-window2', { resize: false });
 
     var mini_btn = document.getElementsByClassName("minBtn");
     var max_btn = document.getElementsByClassName("maxBtn");

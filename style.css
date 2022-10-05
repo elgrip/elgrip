@@ -251,6 +251,11 @@ SPD_window.head.style.right = "5px";
 
 }
 
+.big-input{
+    width: 300px;
+    height: 180px;
+}
+
 .subwindow-input{
     width: 130px;
     height: 30px;
