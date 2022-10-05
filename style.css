@@ -101,12 +101,14 @@ form{
 
 /*------------------------ sub windows ------------------*/
 .sub-window{
-    height: 600px !important;
+    height: auto !important;
     width: 950px !important;
     background: transparent !important; 
+    padding-bottom: 15px;
     top: 100px; 
     /* left: 400px; */
     left: 50px;
+   
 }
 
 .window-header{
@@ -134,7 +136,8 @@ form{
     height: 100%;
     background: #F4F4F4;
     border: 1px solid #000000;
-    border-radius: 0px 0px 5px 5px; 
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 1px 15px #A8A8A8; 
 }
 
 
@@ -267,7 +270,7 @@ SPD_window.head.style.right = "5px";
 
 .group{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row !important; 
     align-items: flex-end;  
     justify-content: space-between;
     margin-top: 20px;
@@ -302,3 +305,13 @@ SPD_window.head.style.right = "5px";
 .section > p{
     margin: 0;
 }
+
+.dropdownj{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+
