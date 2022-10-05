@@ -26,14 +26,116 @@
     <div class="sub-window" id="sub-window" name="Serial Port Setup">
         <div class="window-content" id="window-content">
             <p class="window-title">Serial Port Setup</p>
+
+            <!--Header and terminator autofill values-->
+            <div class="header-terminator subpanes">
+                <div class="subwindow-title">Header and Terminator AutoFill Values</div>
+                <div class="subwindow-content">
+                    <div class="section">
+                        Required Header
+                        <input type="number" class="subwindow-input">
+                    </div>
+                    
+                    <div class="section">
+                        <div class="group">
+                            <p>ASCII</p>
+                            <input type="" class="subwindow-input">
+                        </div>
+                        <div class="group">
+                            <p>RTU</p>
+                            <input type="" class="subwindow-input">
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="group">
+                            <p>LRC</p>
+                            <input type="" class="subwindow-input">
+                        </div>
+                        <div class="group">
+                            <p>CRC</p>
+                            <input type="" class="subwindow-input">
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        Terminator
+                        <input type="number" class="subwindow-input">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Error correciton on received data-->
+        <div class="strange-container">
+                <div class="subpanes" style="width: 70%;">
+                    <div class="subwindow-title">Error Correction on Received Data</div>
+                    <div class="subwindow-content">
+                        <div class="section">
+                            <div class="group">
+                                <p>ASCII returned data display</p>
+                                <input type="textarea" >
+                            </div>
+                            <div class="group">
+                                <p>RTU returned data display</p>
+                                <input class="subwindow-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section" style="width: 40% !important;">
+                    <div class="subpanes RRR">
+                        <div class="subwindow-title">LRC</div>
+                        <div class="subwindow-content">
+                            <div class="group r-group">
+                                <div class="section">
+                                    <p>Received LRC</p>
+                                    <input class="subwindow-input" >
+                                </div>
+                                <div class="section">
+                                    <p>Calculated LRC</p>
+                                    <input class="subwindow-input" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subpanes RRR">
+                        <div class="subwindow-title">CRC</div>
+                        <div class="subwindow-content">
+                            <div class="group r-group">
+                                <div class="section">
+                                    <p>Received CRC</p>
+                                    <input class="subwindow-input" >
+                                </div>
+                                <div class="section">
+                                    <p>Calculated CRC</p>
+                                    <input class="subwindow-input" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+
         </div>
     </div>
 
-    <div class="sub-window" id="sub-window2" name="Serial Port Debug" style="top: 200px; left: 700px;">
+
+
+
+    <!--<div class="sub-window" id="sub-window2" name="Serial Port Debug" style="top: 200px; left: 700px;">
         <div class="window-content" id="window-content">
             <p class="window-title">Serial Port Debug</p>
         </div>
-    </div>
+    </div>-->
 
 
 

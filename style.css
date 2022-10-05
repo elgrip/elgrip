@@ -102,10 +102,11 @@ form{
 /*------------------------ sub windows ------------------*/
 .sub-window{
     height: 600px !important;
-    width: 800px !important;
+    width: 950px !important;
     background: transparent !important; 
     top: 100px; 
-    left: 400px;
+    /* left: 400px; */
+    left: 50px;
 }
 
 .window-header{
@@ -136,6 +137,14 @@ form{
     border-radius: 0px 0px 5px 5px; 
 }
 
+
+:root{
+    --background: #e7e7e7;
+    --border: #a8a8a8;
+    --themeA: #000;
+    --themeB: #890FDD;
+    --tabs: #cfcfcf;
+}
 /*------styles for window actions-------
 .minimize{
     position: absolute;
@@ -205,4 +214,86 @@ SPD_window.head.style.right = "5px";
     border-radius: 5px;
     /* background: linear-gradient(180deg, #7B7B7B 0%, #000000 59.41%); */
     background: #000 !important; 
+}
+
+
+
+/*----------------------ii-------------------*/
+.subpanes{
+    /* height: 200px; */
+    border-radius: 5px;
+    background: var(--background);
+    width: 95%;
+    margin: 0 auto;
+    padding: 0px 0px 20px 0px;
+    margin-top: 25px;
+    border: 1px solid var(--border);
+}
+
+.subwindow-title{
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid var(--border);
+    background: var(--tabs);
+    padding: 6px 12px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+}
+
+.subwindow-content{
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end;  
+    justify-content: space-around;
+
+}
+
+.subwindow-input{
+    width: 130px;
+    height: 30px;
+    border: 2px solid var(--border);
+    background: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.group{
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end;  
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.group > p{
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.strange-container{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    /* background: red; */
+
+}
+
+/* .RRR{
+    height: 130px;
+} */
+.r-group{
+    width: 100%;
+    margin: 0 !important;
+    padding: 10px;
+    /* background: green; */
+    display: flex;
+    justify-content: space-around;
+}
+.section > p{
+    margin: 0;
 }
