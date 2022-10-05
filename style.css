@@ -165,7 +165,7 @@ SPD_window.head.style.right = "5px";
     display: none !important;
 }*/
 
-.title{
+.window-title{
     position: absolute;
     color: #ffffff;
     top: -5px;
