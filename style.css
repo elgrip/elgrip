@@ -7,6 +7,8 @@
 html,body{
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
     font-family: poppins;
 }
 *{
@@ -59,9 +61,13 @@ form{
     margin-top: 20px;
     padding: 10px;
 }
+
+/*---------space between username and password input-----*/
 .spacer{
     height: 30px;
 }
+
+/*--------style for for inputs including submit button-------*/
 .form-input{
     border: none;
     font-size: 25px;
@@ -69,4 +75,134 @@ form{
     padding: 15px;
     /* height: 25px;
     width: 100px; */
+}
+
+
+
+/*-------------------------main window styling---------*/
+.nav{
+    background: #000;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items:center ;
+}
+
+.sub-nav{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    width: 500px;
+    justify-content: space-around;
+}
+
+
+/*------------------------ sub windows ------------------*/
+.sub-window{
+    height: 600px !important;
+    width: 800px !important;
+    background: transparent !important; 
+    top: 100px; 
+    left: 400px;
+}
+
+.window-header{
+    height: 35px;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items:center ;
+    color: #fff;
+}
+
+.window-title{
+    color: #fff;
+}
+
+.actions{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.window-content{
+    height: 100%;
+    background: #F4F4F4;
+    border: 1px solid #000000;
+    border-radius: 0px 0px 5px 5px; 
+}
+
+/*------styles for window actions-------
+.minimize{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+SPD_window.body.style.display = "none";
+// SPD_window.head.style.width = "300px";
+SPD_window.head.style.position = "absolute";
+SPD_window.head.style.bottom = "5px";
+SPD_window.head.style.right = "5px";
+------*/
+
+.dragPoint{
+    background: linear-gradient(180deg, #7B7B7B 0%, #000000 59.41%);
+    border-radius: 5px 5px 0px 0px;
+    height: 40px !important;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px;
+}
+
+/*.left, .upperLeft, .top, .upperRight, .right, .lowerRight, .bottom, .lowerLeft{
+    display: none !important;
+}*/
+
+.title{
+    position: absolute;
+    color: #ffffff;
+    top: -5px;
+    left: 60px;
+}
+
+.control-btn{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.btnContainer{
+    width: 100px !important;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+
+/*-----style for task bar--------*/
+.task-bar{
+    background: #ffffff !important;
+    height: 80px !important;
+    display: flex;
+    justify-content: center; 
+    border-top: 2px solid #A8A8A8;
+    padding: 10px;  
+}
+
+.minimizedTitle{
+    font-size: 18px !important;
+}
+.minimizedItem{
+    width: auto !important;
+    padding: 8px !important;
+    border-radius: 5px;
+    /* background: linear-gradient(180deg, #7B7B7B 0%, #000000 59.41%); */
+    background: #000 !important; 
 }
