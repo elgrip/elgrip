@@ -210,11 +210,10 @@ SPD_window.head.style.right = "5px";
 
 /*-----style for task bar--------*/
 .task-bar{
-    background: #ffffff !important;
+    background: var(--themeB);
     height: 80px !important;
     display: flex;
     justify-content: center; 
-    border-top: 2px solid #A8A8A8;
     padding: 10px;  
 }
 
@@ -223,8 +222,9 @@ SPD_window.head.style.right = "5px";
 }
 .minimizedItem{
     width: auto !important;
-    padding: 8px !important;
-    border-radius: 5px;
+    padding: 10px !important;
+    border-radius: 15px;
+    color: #ffffff;
     /* background: linear-gradient(180deg, #7B7B7B 0%, #000000 59.41%); */
     background: #000 !important; 
 }
