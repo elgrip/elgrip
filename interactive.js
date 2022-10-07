@@ -261,7 +261,7 @@ function changeVerticalMeasures(element, parent, mouseDrag, zone) {
     }
     
     
-    if (height >= 650) { // Ensure min height (Default 5px)
+    if (height >= 500) { // Ensure min height (Default 5px)
 
         // Change offset for top zones
         if (zone == 2) {
