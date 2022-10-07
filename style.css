@@ -100,15 +100,25 @@ form{
 
 
 /*------------------------ sub windows ------------------*/
-.sub-window{
-    height: auto !important;
-    width: 950px !important;
-    background: transparent !important; 
+/* .sub-window{
     padding-bottom: 15px;
-    top: 100px; 
-    /* left: 400px; */
+    top: 100px;
     left: 50px;
-   
+} */
+
+#sub-window{
+    min-height: 650px !important;
+    min-width: 800px !important;
+    background: var(--background) !important;
+    top: 60px;
+    left: 10px;
+}
+#sub-window2{
+    min-height: 650px !important;
+    min-width: 800px !important;
+    background: var(--background) !important;
+    top: 120px;
+    left: 40px;
 }
 
 .window-header{
@@ -173,9 +183,9 @@ SPD_window.head.style.right = "5px";
     padding: 15px;
 }
 
-/*.left, .upperLeft, .top, .upperRight, .right, .lowerRight, .bottom, .lowerLeft{
-    display: none !important;
-}*/
+.left, .upperLeft, .top, .upperRight, .right, .lowerRight, .bottom, .lowerLeft{
+    opacity: 0 !important;
+}
 
 .window-title{
     position: absolute;

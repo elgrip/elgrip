@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" >
-    <!--add intereactive js-->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+    <!--add intereactive js-->
     <link href="https://cdn.jsdelivr.net/gh/interactiveJS/interactiveJS@v2.0.1/src/css/interactive.min.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/gh/interactiveJS/interactiveJS@v2.0.1/src/interactive.min.js"></script>
-
+    <!-- <script src="https://cdn.jsdelivr.net/gh/interactiveJS/interactiveJS@v2.0.1/src/interactive.min.js"></script> -->
+    <script src="interactive.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -29,8 +31,8 @@ title>Document</title>
     </div>
 
 
-    <div class="sub-window" id="sub-window" name="Serial Port Setup">
-        <div class="window-content" id="window-content">
+    <div class="sub-window">
+        <div class="window-content" id="sub-window"  name="Serial Port Setup">
             <p class="window-title">Serial Port Setup</p>
 
             <!--Header and terminator autofill values-->
@@ -137,8 +139,8 @@ title>Document</title>
 
 
 
-    <div class="sub-window" id="sub-window2" name="Serial Port Debug" style="top: 200px; left: 700px;">
-        <div class="window-content" id="window-content">
+    <div class="sub-window"  >
+        <div class="window-content" id="sub-window2" name="Serial Port Debug">
             <p class="window-title">Serial Port Debug</p>
             <!-------------- FOR VALUE ------------->
 
@@ -286,8 +288,13 @@ title>Document</title>
 
 
 
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
 <script>
+  interactive('sub-window', { resize: true });
+  interactive('sub-window2', { resize: true });
+
+
+
     var tab_a = document.getElementById("selectiveA");
     var tab_b = document.getElementById("selectiveB");
 
@@ -318,8 +325,7 @@ title>Document</title>
 
 
 
-    interactive('sub-window', { resize: false });
-    interactive('sub-window2', { resize: false });
+  
 
     var mini_btn = document.getElementsByClassName("minBtn");
     var max_btn = document.getElementsByClassName("maxBtn");
