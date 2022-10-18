@@ -37,8 +37,8 @@
     </div>
 
     <div class="sub-window">
-        <div class="window-content" id="sub-window"  name="Serial Port Setup">
-            <p class="window-title">Serial Port Setup</p>
+        <div class="window-content" id="sub-window"  name="Serial Port Debug">
+            <p class="window-title">Serial Port Debug</p>
 
             <!--Header and terminator autofill values-->
             <div class="header-terminator subpanes">
@@ -145,8 +145,8 @@
 
 
     <div class="sub-window"  >
-        <div class="window-content" id="sub-window2" name="Serial Port Debug">
-            <p class="window-title">Serial Port Debug</p>
+        <div class="window-content" id="sub-window2" name="Serial Port Setup">
+            <p class="window-title">Serial Port Setup </p>
             <!-------------- FOR VALUE ------------->
 
              <!--Header and terminator autofill values-->
@@ -347,11 +347,11 @@
     mini_btn[i].innerHTML = "<i class='bi bi-dash-circle-fill control-btn'></i>"; 
    }
 
-    // for(var i = 0; i < max_btn.length; i++){
-    //     max_btn[i].onclick = function swap(){
-    //         this.innerHTML = "<i class='bi bi-box-arrow-in-down-left control-btn'></i>";
-    //     }
-    // }
+     for(var i = 0; i < max_btn.length; i++){
+         max_btn[i].onmousedwon = function swap(){
+             this.innerHTML = "<i class='bi bi-box-arrow-in-down-left control-btn'></i>";
+         }
+     }
 
     var task_bar = document.getElementById("minimizeZone");
     task_bar.classList.add("task-bar");
