@@ -223,7 +223,7 @@ function changeHorizontalMeasures(element, parent, mouseDrag, zone) {
         return;
     }
     
-    if (width >= 800) { // Ensure min width (Default 5px)
+    if (width >= 400) { // Ensure min width (Default 5px)
 
         // Change offset for left zones
         if (zone == 0) {
@@ -261,7 +261,7 @@ function changeVerticalMeasures(element, parent, mouseDrag, zone) {
     }
     
     
-    if (height >= 500) { // Ensure min height (Default 5px)
+    if (height >= 400) { // Ensure min height (Default 5px)
 
         // Change offset for top zones
         if (zone == 2) {
@@ -1127,7 +1127,7 @@ function resizeOnWindowChange() {
             
             let width = windowW - leftOffset - 6;
             // Ensure min width. (Default 5px)
-            if (width >= 5) {
+            if (width >= 200) {
                 parent.style.gridTemplateColumns = '3px ' + width + 'px 3px';
                 element.style.width = width + 'px';
             }
@@ -1143,7 +1143,7 @@ function resizeOnWindowChange() {
 
             let height = windowH - offsetTop - 6;
             // Ensure min height. (Default 5px)
-            if (height >= 5) {
+            if (height >= 200) {
                 parent.style.gridTemplateRows = '3px ' + height + 'px 3px';
                 element.style.height = height + 'px';
             }

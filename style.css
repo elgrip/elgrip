@@ -116,9 +116,10 @@ form{
 } */
 
 #sub-window{
-   
+
     min-height: 570px !important;
     min-width: 800px !important;
+    
     background: var(--background) !important;
     top: 50px;
     left: 10px;
@@ -134,6 +135,13 @@ form{
 .parentResize{
     border: 1px solid #000000;
     border-radius: 10px;
+    overflow: scroll !important;
+    
+
+    /* display: flex !important;
+    flex-wrap: wrap !important;
+    height: 1000px !important;
+    width: 1000px !important; */
 }
 
 
@@ -349,3 +357,10 @@ SPD_window.head.style.right = "5px";
 
 
 
+
+/*------------scroll bar-------------------*/
+::-webkit-scrollbar { width: 0px !important; }
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+    /* border-radius: 3px;  */
+}
