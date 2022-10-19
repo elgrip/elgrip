@@ -17,7 +17,7 @@ body{
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background: var(--background);
+   background: #fff;
 }
 
 *{
@@ -78,12 +78,11 @@ form{
 
 /*--------style for for inputs including submit button-------*/
 .form-input{
-    border: none;
+    border: 2px solid var(--border);
     font-size: 25px;
-    background: #E7E7E7;
+    background: #ffffff;
     padding: 15px;
-    /* height: 25px;
-    width: 100px; */
+   
 }
 
 
