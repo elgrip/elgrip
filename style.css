@@ -1,9 +1,13 @@
+/* -------- css file for cross hmi platform - -------*/
+
+/*set font face for overall page and layout------*/
 @font-face{
     font-family: poppins;
     src: url('src/Poppins-Medium.ttf');
 }
 
 
+/*--------- general style for html and body---------*/
 html,body{
     padding: 0;
     margin: 0;
@@ -87,6 +91,7 @@ form{
 
 
 
+
 /*-------------------------main window styling---------*/
 .nav{
     background: #000;
@@ -105,14 +110,6 @@ form{
     width: 500px;
     justify-content: space-around;
 }
-
-
-/*------------------------ sub windows ------------------*/
-/* .sub-window{
-    padding-bottom: 15px;
-    top: 100px;
-    left: 50px;
-} */
 
 #sub-window{
 
@@ -135,17 +132,7 @@ form{
     border: 1px solid #000000;
     border-radius: 10px;
     overflow: scroll !important;
-    
-
-    /* display: flex !important;
-    flex-wrap: wrap !important;
-    height: 1000px !important;
-    width: 1000px !important; */
 }
-
-
-
-
 
 
 
@@ -186,20 +173,10 @@ form{
     --themeB: #890FDD;
     --tabs: #cfcfcf;
 }
-/*------styles for window actions-------
-.minimize{
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
 
-SPD_window.body.style.display = "none";
-// SPD_window.head.style.width = "300px";
-SPD_window.head.style.position = "absolute";
-SPD_window.head.style.bottom = "5px";
-SPD_window.head.style.right = "5px";
-------*/
 
+
+/*------styles for window actions-------*/
 .dragPoint{
     background: linear-gradient(180deg, #7B7B7B 0%, #000000 59.41%);
     border-radius: 5px 5px 0px 0px;
@@ -226,7 +203,6 @@ SPD_window.head.style.right = "5px";
     color: #fff;
     font-size: 20px;
 }
-
 
 .btnContainer{
     width: 100px !important;
@@ -262,7 +238,7 @@ SPD_window.head.style.right = "5px";
 
 
 
-/*----------------------ii-------------------*/
+/*----------------------sub panes-------------------*/
 .subpanes{
     /* height: 200px; */
     border-radius: 5px;
@@ -332,9 +308,8 @@ SPD_window.head.style.right = "5px";
 
 }
 
-/* .RRR{
-    height: 130px;
-} */
+
+
 .r-group{
     width: 100%;
     margin: 0 !important;
