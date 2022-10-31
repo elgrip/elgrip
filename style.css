@@ -1,0 +1,340 @@
+/* -------- css file for cross hmi platform - -------*/
+
+/*set font face for overall page and layout------*/
+@font-face{
+    font-family: poppins;
+    src: url('src/Poppins-Medium.ttf');
+}
+
+
+/*--------- general style for html and body---------*/
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: poppins;
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+.container{
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+.inner-container{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   width: 50vw;
+}
+.top-area{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.electrogrip{font-size: 45px; font-weight: bolder;}
+.sub-title{font-size: 25px; font-weight: 100;}
+.login{font-size: 30px; margin: 0; border-bottom: 2px solid #A8A8A8; padding: 10px;}
+.btn{margin-top: 20px; background: #890FDD !important;  color: #ffffff;}
+.btn:hover{
+    background: #000 !important;
+    transition-duration: 1s;
+}
+
+.brand-image{
+    height: 100px;
+    width: 100px;
+}
+.form-field{
+    border: 1px solid #A8A8A8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/*---------space between username and password input-----*/
+.spacer{
+    height: 30px;
+}
+
+/*--------style for for inputs including submit button-------*/
+.form-input{
+    border: 2px solid var(--border);
+    font-size: 25px;
+    background: #ffffff;
+    padding: 15px;
+   
+}
+
+
+
+
+/*-------------------------main window styling---------*/
+.nav{
+    background: #000;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items:center ;
+}
+
+.sub-nav{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    width: 500px;
+    justify-content: space-around;
+}
+
+#sub-window{
+
+    min-height: 570px !important;
+    min-width: 800px !important;
+    
+    background: var(--background) !important;
+    top: 50px;
+    left: 10px;
+}
+#sub-window2{
+    min-height: 570px !important;
+    min-width: 800px !important;
+    background: var(--background) !important;
+    top: 100px;
+    left: 40px;
+}
+
+.parentResize{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: scroll !important;
+}
+
+
+
+.window-header{
+    height: 35px;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items:center ;
+    color: #fff;
+}
+
+.window-title{
+    color: #fff;
+}
+
+.actions{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.window-content{
+    height: 100%;
+    background: #F4F4F4;
+    /* border: 1px solid #000000;
+    border-radius: 0px 0px 5px 5px; */
+    box-shadow: 0px 1px 15px #A8A8A8; 
+}
+
+
+:root{
+    --background: #e7e7e7;
+    --border: #a8a8a8;
+    --themeA: #000;
+    --themeB: #890FDD;
+    --tabs: #cfcfcf;
+}
+
+
+
+/*------styles for window actions-------*/
+.dragPoint{
+    background: linear-gradient(180deg, #7B7B7B 0%, #000000 59.41%);
+    border-radius: 5px 5px 0px 0px;
+    height: 40px !important;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px;
+}
+
+.left, .upperLeft, .top, .upperRight, .right, .lowerRight, .bottom, .lowerLeft{
+    opacity: 0 !important;
+}
+
+.window-title{
+    position: absolute;
+    color: #ffffff;
+    top: -5px;
+    left: 60px;
+}
+
+.control-btn{
+    color: #fff;
+    font-size: 20px;
+}
+
+.btnContainer{
+    width: 100px !important;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+
+/*-----style for task bar--------*/
+.task-bar{
+    background: var(--themeB);
+    height: 50px !important;
+    display: flex;
+    justify-content: center; 
+    padding: 10px;
+    overflow: hidden;  
+}
+
+.minimizedTitle{
+    font-size: 18px !important;
+}
+.minimizedItem{
+    width: auto !important;
+    padding: 10px !important;
+    border-radius: 15px;
+    color: #000000 !important;
+    /* background: linear-gradient(180deg, #7B7B7B 0%, #000000 59.41%); */
+    background: rgb(255, 255, 255) !important; 
+}
+
+.minimizedItem > p{color: #000000 !important;}
+
+
+
+/*----------------------sub panes-------------------*/
+.subpanes{
+    /* height: 200px; */
+    border-radius: 5px;
+    background: var(--background);
+    width: 95%;
+    margin: 0 auto;
+    padding: 0px 0px 10px 0px;
+    margin-top: 25px;
+    border: 1px solid var(--border);
+}
+
+.subwindow-title{
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid var(--border);
+    background: var(--tabs);
+    padding: 6px 12px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+}
+
+.subwindow-content{
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end;  
+    justify-content: space-around;
+
+}
+
+.big-input{
+    width: 300px;
+    height: 180px;
+}
+
+.subwindow-input{
+    width: 130px;
+    height: 30px;
+    border: 2px solid var(--border);
+    background: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.group{
+    display: flex;
+    flex-direction: row !important; 
+    align-items: flex-end;  
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.group > p{
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.strange-container{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    /* background: red; */
+
+}
+
+
+
+.r-group{
+    width: 100%;
+    margin: 0 !important;
+    padding: 10px;
+    /* background: green; */
+    display: flex;
+    justify-content: space-around;
+}
+.section > p{
+    margin: 0;
+}
+
+.dropdownj{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+
+
+/*------------scroll bar-------------------*/
+::-webkit-scrollbar { width: 0px !important; }
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+    /* border-radius: 3px;  */
+}
